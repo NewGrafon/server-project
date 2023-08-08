@@ -63,7 +63,7 @@ frontend: фреймворк angular.js, шаблонизатор pug, офор�
 
 должны быть установлены: nodejs, mongodb
 
-> git clone https://github.com/antirek/server-project.git   // клонируем этот репозиторий
+> git clone https://github.com/NewGrafon/server-project.git   // клонируем этот репозиторий
 
 > cd server-project     // переходим в директорию проекта
 
