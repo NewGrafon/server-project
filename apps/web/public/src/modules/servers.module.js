@@ -53,6 +53,13 @@ export const serversModule = angular.module('servers',[])
                     })
                 }
             }
+            this.restart = function() {
+                if(confirm('Вы хотите перезапустить сервер?')){
+                    this.server.$restart(function(){
+                        NotificationService.showSuccess('Сервер перезапущен')
+                    })
+                }
+            }
             this.stop = function(){
                 if(confirm('Вы хотите остановить сервер?')){
                     this.server.$stop(function(){
