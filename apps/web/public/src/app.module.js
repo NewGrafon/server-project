@@ -2,12 +2,14 @@ import stateConfig from './state.config';
 import {serversModule} from './modules/servers.module';
 import {NotificationService} from './modules/notification.service';
 import {factoriesModule} from './factories/factories.module';
+import {groupsModule} from "./modules/groups.module";
 
 angular.module('test_project',[
     'ngResource',
     'ui.bootstrap',
     'ui.router',
     serversModule.name,
+    groupsModule.name,
     factoriesModule.name,
 ])
     .config(stateConfig)

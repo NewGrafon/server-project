@@ -45,3 +45,11 @@ export const factoriesModule = angular.module('factories', [])
       });
     }
   ])
+  .factory('Group', [
+      '$resource',
+      function($resource) {
+        return $resource('/groups/:id', {id: "@_id"},{
+
+        })
+      }
+  ])
